@@ -12,6 +12,9 @@
 		46310A972B4BEAD800B526E4 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46310A962B4BEAD800B526E4 /* ViewController.swift */; };
 		46310A9C2B4BEAD900B526E4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 46310A9B2B4BEAD900B526E4 /* Assets.xcassets */; };
 		46310A9F2B4BEAD900B526E4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 46310A9D2B4BEAD900B526E4 /* LaunchScreen.storyboard */; };
+		46310AAB2B4D08DF00B526E4 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46310AAA2B4D08DF00B526E4 /* MainViewController.swift */; };
+		46310AAD2B4D18C900B526E4 /* Todo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46310AAC2B4D18C900B526E4 /* Todo.swift */; };
+		46310AAF2B4D370600B526E4 /* TodoUserDefaults.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46310AAE2B4D370600B526E4 /* TodoUserDefaults.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +25,9 @@
 		46310A9B2B4BEAD900B526E4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		46310A9E2B4BEAD900B526E4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		46310AA02B4BEAD900B526E4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		46310AAA2B4D08DF00B526E4 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		46310AAC2B4D18C900B526E4 /* Todo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Todo.swift; sourceTree = "<group>"; };
+		46310AAE2B4D370600B526E4 /* TodoUserDefaults.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoUserDefaults.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,14 +60,49 @@
 		46310A912B4BEAD800B526E4 /* TodoMemoApp */ = {
 			isa = PBXGroup;
 			children = (
-				46310A922B4BEAD800B526E4 /* AppDelegate.swift */,
-				46310A942B4BEAD800B526E4 /* SceneDelegate.swift */,
-				46310A962B4BEAD800B526E4 /* ViewController.swift */,
+				46310AA62B4C1A7500B526E4 /* Model */,
+				46310AA72B4C1A7F00B526E4 /* View */,
+				46310AA82B4C1A8A00B526E4 /* Controller */,
+				46310AA92B4C1AA200B526E4 /* Supports */,
 				46310A9B2B4BEAD900B526E4 /* Assets.xcassets */,
-				46310A9D2B4BEAD900B526E4 /* LaunchScreen.storyboard */,
 				46310AA02B4BEAD900B526E4 /* Info.plist */,
 			);
 			path = TodoMemoApp;
+			sourceTree = "<group>";
+		};
+		46310AA62B4C1A7500B526E4 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				46310AAC2B4D18C900B526E4 /* Todo.swift */,
+				46310AAE2B4D370600B526E4 /* TodoUserDefaults.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		46310AA72B4C1A7F00B526E4 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		46310AA82B4C1A8A00B526E4 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				46310A962B4BEAD800B526E4 /* ViewController.swift */,
+				46310AAA2B4D08DF00B526E4 /* MainViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		46310AA92B4C1AA200B526E4 /* Supports */ = {
+			isa = PBXGroup;
+			children = (
+				46310A942B4BEAD800B526E4 /* SceneDelegate.swift */,
+				46310A9D2B4BEAD900B526E4 /* LaunchScreen.storyboard */,
+				46310A922B4BEAD800B526E4 /* AppDelegate.swift */,
+			);
+			path = Supports;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,6 +178,9 @@
 				46310A972B4BEAD800B526E4 /* ViewController.swift in Sources */,
 				46310A932B4BEAD800B526E4 /* AppDelegate.swift in Sources */,
 				46310A952B4BEAD800B526E4 /* SceneDelegate.swift in Sources */,
+				46310AAB2B4D08DF00B526E4 /* MainViewController.swift in Sources */,
+				46310AAF2B4D370600B526E4 /* TodoUserDefaults.swift in Sources */,
+				46310AAD2B4D18C900B526E4 /* Todo.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
